@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 500px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    margin: 0 auto;
+    background-color:rgba(194, 187, 189, 0.461);
+    border-radius: 5px;
+}
+.account{
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    text-align: center;
+}
+
+.account input{
+    width: 305px;
+    height: 35px;
+    opacity: .6;
+}
+.input_icon{
+    position: relative;
+    width: 400px;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    transform: translateY(-5%);
+}
+input {
+    padding-left: 40px;
+}
+i{
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+span{
+    text-align: left;
+    color: rgb(13, 198, 16);
+    height: 20px;
+}
+.container2, .date_of_birth, .gender{
+    display: flex;
+}
+.gender input{
+    appearance: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(179, 179, 182);
+    height: 20px;
+    position: relative;
+    top:50px;
+    transition: all .3s;
+}
+.gender input:checked{
+    background-color: red;
+}
+.gender .input_gender{
+    position: relative;
+    top:50px;
+}
+
+.date_of_birth, .gender{
+    gap: 5px;
+}
+.date_of_birth input{
+    padding-left: 0px;
+    width: 50px;
+    height: 50px;
+    transform: translateY(80%);
+}
+.payment_details{
+    display: grid;
+}
+.payment_details .radio{
+    text-align: center;
+}
+.payment_details .radio input{
+    appearance: none;
+    padding: 10px;
+    background-color: rgb(179, 179, 182);
+    border-radius: 5px;
+}
+.payment_details .radio input:checked{
+    background-color: red;
+}
+.input_pay{
+    text-align: center;
+    opacity: .6;
+}
+.input_pay .credit{
+    width: 400px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.select,.cvc_icon{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    opacity: .6;
+}
+.input_pay i, .cvc_icon i{
+    position: relative;
+    left: 40px;
+}
+#fa2.fa.fa-user::before{
+    position: relative;
+    top: 30px;
+}
